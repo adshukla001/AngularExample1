@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Auto Complete</title>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+
+    <script src="app.js"></script>
+    <link href="MyAutoCompleteStyle.css" rel="stylesheet" /> 
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="myController">
+        <div>My first custom directive</div>
+        <span class="autoComplete-label">Select movie : </span>
+        <my-auto-complete label="Select Movie" selected-item="selectedMovie" options="someMovies" style="width:200px;"></my-auto-complete>
+        <div>
+            You have selected : {{selectedMovie}}    
+        </div>   
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+.autoComplete{
+    width : inherit;
+    height : inherit;
+    display: inline-block;   
+}
+/*.autoComplete-label{
+    width:30%;
+}*/
+/*.autoComplete-control{
+    display: inherit;
+    width: inherit;
+}*/
+.autoComplete-input{
+    width: inherit;
+}
+.autoComplete-list{
+    width: inherit;
+    display: table;
+    margin: 0;
+    padding: 0;
+    overflow-x: scroll;
+    border: 1px solid;
+}
+.autoComplete-item{
+    cursor: pointer;
+    list-style-type: none;
+    width: inherit;
+}

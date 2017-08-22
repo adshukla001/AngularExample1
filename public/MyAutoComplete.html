@@ -1,0 +1,10 @@
+<div class="autoComplete">
+    <!--<span class="autoComplete-label">{{label}} : </span>-->
+    <!--<div class="autoComplete-control">-->
+        <input class="autoComplete-input" ng-model="selectedItem.Value"></input>
+        <ul class="autoComplete-list" ng-show="showList">
+            <li class="autoComplete-item" ng-repeat="item in options| filter: {'Value' : selectedItem.Value}" 
+                ng-click="selectItem()">{{item.Value}}</li>
+        </ul>  
+    <!--</div>  -->
+</div>
